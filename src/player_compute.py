@@ -22,18 +22,18 @@ def inteligente_rango(rango, guess_pc, pista_menor):
     return rango
 
 # Inicializa el rango APARTIR DE AQUI IMPLEMENTARLO PARA ARCHIVO GAME DONDE PONDRE UN PRINT(NUMERO SECRETO ES MENOR ) SII PARA PISTA_MENOR = TRUE O PRINT(NUMERO SECRETO ES MAYOY ) SI PISTA_MENOR ES FALSE
-rango = rango_implentado()
+#rango = rango_implentado()
 
 # Realiza una jugada de la computadora
-guess_pc = computer_jugada(rango)
+#guess_pc = computer_jugada(rango)
 
 # Simula una pista: por ejemplo, el número secreto es menor
-pista_menor = False
+#pista_menor = False
 
 # Actualiza el rango basado en la pista
-rango_actualizado = inteligente_rango(rango, guess_pc, pista_menor)
+#rango_actualizado = inteligente_rango(rango, guess_pc, pista_menor)
 
-print(f"Nuevo rango después de la pista: {rango_actualizado}")
+#print(f"Nuevo rango después de la pista: {rango_actualizado}")
 
 
 

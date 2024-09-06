@@ -1,13 +1,13 @@
 from random import randint #uso del modulo randon con funcion randint
 
-def saludo_iniciar_juego():
+def saludo_iniciar():
     """
     uso de print para enviar mensaje de saludo
     """
     print("➖🤖 HOLA!!! 🤖 jugaremos a Adivinar el numero 🎲 ")
-    print ("➖🤖 tienes adivinar entre numeros del 1 al 100 suerte 🍀​​​!!")
+    print("➖🤖 tienes adivinar entre numeros del 1 al 100 suerte 🍀​​​!!")
     
-saludo_iniciar_juego()
+#saludo_iniciar()
 
 #  1.1 generando numero aleatorio
 def numero_randon():
@@ -29,17 +29,16 @@ def verificar_comparison(jugador_guess, numero_oculto):
     else:
         print("➖🎊​​ FELICIDADES ADIVINASTE EL NUMERO 🥳 !!")
 
-verificar_comparison(jugador_guess=2, numero_oculto=5)
-
-def registro_lista(numero_oculto, registrar_lista):
+#verificar_comparison(jugador_guess=2, numero_oculto=5)
+def lista(numero_oculto, listade_intentos):
     """_summary_
 
     Args:
-        numero_oculto (_type_): _description_
-        registrar_lista (_type_): _description_
+        numero_oculto: numero RANDOM
+        listade_intentos: se iran anadiendo los input--intentos
 
     Returns:
-        _type_: _description_
+        list: lista de intentos realizados antes de ganar
     """    
-    registrar_lista.append(numero_oculto)
-    return registrar_lista
+    listade_intentos.append(numero_oculto)
+    return listade_intentos

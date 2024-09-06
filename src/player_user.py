@@ -23,7 +23,7 @@ def numeros_aceptables():
     """
     while True:
      numero_aceptado = user_jugada()
-     if numero_aceptado < 1 or numero_aceptado > 100:
+     if numero_aceptado  < 1  or numero_aceptado > 100:
        print(" ➖❌ Numero fuera de rango. Ingresa un numero valido del 1 al 100")
      else:
         print(f" ➖✔️  Numero valido: {numero_aceptado}")
