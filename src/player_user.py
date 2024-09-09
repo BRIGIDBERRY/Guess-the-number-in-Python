@@ -27,4 +27,3 @@ def numero_aceptable(numero):
    
 
 
-# numeros_aceptables()

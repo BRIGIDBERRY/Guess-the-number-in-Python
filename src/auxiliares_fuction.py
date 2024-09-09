@@ -14,7 +14,7 @@ def numero_randon():
     numero_oculto  = randint(1,100)
     return numero_oculto
 #1.3 verificar :comparar suposicion
-def verificar_comparison(jugador_guess, numero_oculto):
+def comparando_pista(jugador_guess, numero_oculto):
     """
     compara la suposicion del jugador con el numero arrojado por el sistema
 
@@ -26,8 +26,7 @@ def verificar_comparison(jugador_guess, numero_oculto):
         print ("➖🔎 Pista el numero es mayor 🤫​ ")  
     elif jugador_guess > numero_oculto:   
         print ("➖🔎 Pista el numero es menor 🤫​ ") 
-    else:
-        print("➖🎊​​ FELICIDADES ADIVINASTE EL NUMERO 🥳 !!")
+    
 
 #verificar_comparison(jugador_guess=2, numero_oculto=5)
 def lista(numero_oculto, listade_intentos):
@@ -42,3 +41,13 @@ def lista(numero_oculto, listade_intentos):
     """    
     listade_intentos.append(numero_oculto)
     return listade_intentos
+
+def fin_game(ganador, listade_intentos):
+    """_summary_
+
+    Args:
+        ganador (_type_): _description_
+        listade_intentos (_type_): _description_
+    """    
+    print(f"Bravo!!!{ganador} haz adivinado el numero")
+    print(f"Estos son tus intentos --> {listade_intentos}")
