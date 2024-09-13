@@ -23,9 +23,9 @@ def comparando_pista(jugador_guess, numero_oculto):
     numero_oculto(int): numero que arroja el sistema
     """
     if jugador_guess < numero_oculto:   
-        print ("➖🔎 Pista el numero es mayor 🤫​ ")  
+        print ("➖🔎👣​ Pista el numero es mayor 🤫​ ")  
     elif jugador_guess > numero_oculto:   
-        print ("➖🔎 Pista el numero es menor 🤫​ ") 
+        print ("➖🔎👣​ Pista el numero es menor 🤫​ ") 
     
 
 #verificar_comparison(jugador_guess=2, numero_oculto=5)
@@ -49,5 +49,5 @@ def fin_game(ganador, listade_intentos):
         ganador (_type_): _description_
         listade_intentos (_type_): _description_
     """    
-    print(f"Bravo!!!{ganador} haz adivinado el numero")
-    print(f"Estos son tus intentos --> {listade_intentos}")
+    print(f"➖🏆​ Bravo!! {ganador} haz adivinado el numero 🎉​​ 🏆​")
+    print(f"➖🤖 Hiciste {len(listade_intentos)} intentos, estas son tus jugadas 👉 {listade_intentos} 💪😎​")
