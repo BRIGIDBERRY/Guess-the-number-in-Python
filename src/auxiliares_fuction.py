@@ -23,9 +23,9 @@ def comparando_pista(jugador_guess, numero_oculto):
     numero_oculto(int): numero que arroja el sistema
     """
     if jugador_guess < numero_oculto:   
-        print ("➖🔎👣​ Pista el numero es mayor 🤫​ ")  
+        print ("Pista el numero es mayor")  
     elif jugador_guess > numero_oculto:   
-        print ("➖🔎👣​ Pista el numero es menor 🤫​ ") 
+        print ("Pista el numero es menor") 
     
 
 #verificar_comparison(jugador_guess=2, numero_oculto=5)
