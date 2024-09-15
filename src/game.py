@@ -8,11 +8,11 @@ usuario = input("ingresa tu nombre : ")
 def game():
     saludo_iniciar()  
     randomn = numero_randon()
-    print("El número generado es:",randomn)#BORRAR SOLO ES PARA HACER MAS RAPIDO LAS JUGADAS Y LA IMPLEMENTACION DE JUEGO
+    #print("El número generado es:",randomn)#BORRAR SOLO ES PARA HACER MAS RAPIDO LAS JUGADAS Y LA IMPLEMENTACION DE JUEGO
     
     
     while True:
-        print(" 〰️ 🎲​ ES TU TURNO 🤓")
+        print("ES TU TURNO ")
         user_numero = user_jugada()
         listaparausuario = lista(user_numero, usuario_lista)
         if randomn == user_numero:
@@ -23,7 +23,7 @@ def game():
         else:
             comparando_pista(user_numero, randomn)
         
-        print("〰️ 🎲​ TURNO DE LA PC 💻​ ")    
+        print("TURNO DE LA PC")    
         pc_numero = computer_jugada()
         listapara_pc = lista(pc_numero,pc_lista)
 
