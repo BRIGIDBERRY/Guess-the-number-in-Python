@@ -1,12 +1,14 @@
-from auxiliares_fuction import numero_randon, comparando_pista, saludo_iniciar, lista, fin_game, volver_jugar
+from auxiliares_function import numero_randon, comparando_pista, saludo_iniciar, lista, fin_game, volver_jugar
 from player_user import user_jugada
 from player_compute import computer_jugada
 
 usuario_lista = []
 pc_lista = []
 usuario = input("ingresa tu nombre : ")
+
 def game():
     saludo_iniciar()  
+    
     randomn = numero_randon()
     #print("El número generado es:",randomn)#BORRAR SOLO ES PARA HACER MAS RAPIDO LAS JUGADAS Y LA IMPLEMENTACION DE JUEGO
     
@@ -34,8 +36,8 @@ def game():
             comparando_pista(pc_numero,randomn)
 
     volver_jugar(game)
-game()
+#game()
 
 
-#if __name__ == '__main__':
- #   game()
+if __name__ == '__main__':
+    game()

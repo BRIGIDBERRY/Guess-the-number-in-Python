@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from src.auxiliares_fuction import comparando_pista
+from src.auxiliares_function import comparando_pista
 
 class TestComparandoPistasBaja(unittest.TestCase):
     @patch('builtins.print')
