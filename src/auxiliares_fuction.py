@@ -13,6 +13,7 @@ def saludo_iniciar():
 def numero_randon():
     numero_oculto  = randint(1,100)
     return numero_oculto
+
 #1.3 verificar :comparar suposicion
 def comparando_pista(jugador_guess, numero_oculto):
     """
@@ -51,3 +52,16 @@ def fin_game(ganador, listade_intentos):
     """    
     print(f"➖🏆​ Bravo!! {ganador} haz adivinado el numero 🎉​​ 🏆​")
     print(f"➖🤖 Hiciste {len(listade_intentos)} intentos, estas son tus jugadas 👉 {listade_intentos} 💪😎​")
+
+def volver_jugar(gameFunction):
+    """ Preguntamos si quieren volver a jugar """
+    preguntaInput = input("Quieres volver a jugar !!? (Si/No): ").lower()
+
+    while preguntaInput not in ('si', 'no'):
+        print("Ingresa una respuesta correcta (Si/No)")
+        preguntaInput = input("Quieres volver a jugar !!? (Si/No): ").lower()
+
+    if preguntaInput == 'si':
+        gameFunction()
+    else:
+        print("Gracias por Jugar!")

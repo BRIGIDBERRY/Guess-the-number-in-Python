@@ -8,12 +8,12 @@ def user_jugada():
     user_numero = 0
     while not numero_aceptable(user_numero):
         try:
-            input_number = input(" ➖🤖​ Ingresa un numero  : ")
+            input_number = input("Ingresa un numero: ")
             user_numero = int(input_number) 
             if not numero_aceptable(user_numero):
                 print("numero fuera del rango")
         except ValueError:  # buenas practicas poner el tipo except a usar
-            print(" ➖❌ Oooh NO!🥴 Solo se aceptan numeros enteros!")
+            print("  Oooh NO!Solo se aceptan numeros enteros!")
 
     return user_numero
 

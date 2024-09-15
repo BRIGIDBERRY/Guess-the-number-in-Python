@@ -18,4 +18,5 @@ class TestComparandoPistaAlta(unittest.TestCase):
         comparando_pista(jugada,randonumber)
         mock_print.assert_called_with("Pista el numero es menor")
 
-     
+
+        
