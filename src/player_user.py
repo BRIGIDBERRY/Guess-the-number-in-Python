@@ -24,6 +24,3 @@ def numero_aceptable(numero):
         int: El número ingresado por el usuario si es válido.
     """
     return 0 < numero < 101
-   
-
-

@@ -4,8 +4,8 @@ def saludo_iniciar():
     """
     uso de print para enviar mensaje de saludo
     """
-    print("➖🤖 HOLA!!! 🤖 jugaremos a Adivinar el numero 🎲 ")
-    print("➖🤖 tienes adivinar entre numeros del 1 al 100 suerte 🍀​​​!!")
+    print("HOLA!!!jugaremos a Adivinar el numero ")
+    print("tienes adivinar entre numeros del 1 al 100 suerte !")
     
 #saludo_iniciar()
 
@@ -50,8 +50,8 @@ def fin_game(ganador, listade_intentos):
         ganador (_type_): _description_
         listade_intentos (_type_): _description_
     """    
-    print(f"➖🏆​ Bravo!! {ganador} haz adivinado el numero 🎉​​ 🏆​")
-    print(f"➖🤖 Hiciste {len(listade_intentos)} intentos, estas son tus jugadas 👉 {listade_intentos} 💪😎​")
+    print(f"Bravo!! {ganador} haz adivinado el numero")
+    print(f" Hiciste {len(listade_intentos)} intentos, estas son tus jugadas : {listade_intentos} ​")
 
 def volver_jugar(gameFunction):
     """ Preguntamos si quieren volver a jugar """

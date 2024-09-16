@@ -1,12 +1,13 @@
-from auxiliares_function import numero_randon, comparando_pista, saludo_iniciar, lista, fin_game, volver_jugar
+from auxiliar_function import numero_randon, comparando_pista, saludo_iniciar, lista, fin_game, volver_jugar
 from player_user import user_jugada
-from player_compute import computer_jugada
+from player_computer import computer_jugada
 
 usuario_lista = []
 pc_lista = []
-usuario = input("ingresa tu nombre : ")
+
 
 def game():
+    usuario = input("ingresa tu nombre : ")
     saludo_iniciar()  
     
     randomn = numero_randon()
